@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <title><%= current_page.data.title || "The Middleman" %></title>
+    <%= stylesheet_link_tag "all" %>
+    <%= javascript_include_tag  "all" %>
+
+
+
+<!-- Bootstrap and Bootcards JS -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/bootcards/1.0.0/js/bootcards.min.js"></script>
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+    <!-- FACEBOOK -->
+    <meta property="og:type" content="profile"/>
+    <meta property="profile:first_name" content="Вениамин"/>
+    <meta property="profile:last_name" content="Чеботарев"/>
+    <meta property="profile:username" content="Benjamin"/>
+    <meta property="og:title" content="Веб студия '7 утра'"/>
+    <meta property="og:description" content="Создание сайтов от 70$ - Лендинги, интернет - магазины, веб приложения"/>
+    <meta property="og:image" content="http://7-am.ru/images/logo.jpg"/>
+    <meta property="og:url" content="http://7-am.ru"/>
+    <meta property="og:site_name" content="Веб студия '7 утра"/>
+    <meta property="og:see_also" content="http://www.7-am.ru"/>
+    <meta property="fb:admins" content="100007546444647"/>
+
+  </head>
+  
+  <body class="<%= page_classes %>">
+    <%= partial 'layouts/nav' %>
+
+    <%= yield %>
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 text-center-mobile">
+                    <h3 class="white">Закажите сайт уже сегодня</h3>
+                    <h5 class="light regular light-white">Минимальный тариф - всего 7$</h5>
+                    <a href="#" class="btn btn-blue btn-big ripple trial-button">Сделать сайт</a>
+                </div>
+                <div class="col-sm-6 text-center-mobile">
+                    <h3 class="white">Часы работы <span class="open-blink"></span></h3>
+                    <div class="row opening-hours">
+                        <div class="col-sm-6 text-center-mobile">
+                            <h5 class="light-white light">Пн - Сб</h5>
+                            <h3 class="regular white">7:00 - 22:00</h3>
+                        </div>
+                        <div class="col-sm-6 text-center-mobile">
+                            <h5 class="light-white light">Вск</h5>
+                            <h3 class="regular white">10:00 - 18:00</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row bottom-footer text-center-mobile">
+                <div class="col-sm-10">
+                    <p>&copy; 2012 - 2015 Веб студия "7 утра". Верстка лендингов, разработка интернет магазинов и веб приложений.</p>
+                </div>
+                <div class="col-sm-2 text-right text-center-mobile">
+                    <ul class="social-footer">
+                        <li><a href="https://www.facebook.com/7amstudio"><i class="fa fa-facebook-official"></i></a></li>
+                        <li><a href="https://twitter.com/sevenamstudio"><i class="fa fa-twitter-square"></i></a></li>
+                        <li><a href="https://github.com/studio-7am"><i class="fa fa-github-square"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+  </body>
+</html>
