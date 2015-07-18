@@ -11,6 +11,7 @@
 # Page options, layouts, aliases and proxies
 ###
 
+
 activate :blog do |blog|
   blog.layout = "blog"
   blog.permalink = ":year-:month-:day-:title.html"

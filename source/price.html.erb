@@ -15,9 +15,6 @@ title: Цены - Веб студия "7 утра" - Создание сайто
 </div>
 
  <div class="container content">
-
-
- 	
 	<div class="row">
        <% data.tariffs.each do |t| %>
 		<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
@@ -38,14 +35,18 @@ title: Цены - Веб студия "7 утра" - Создание сайто
                             <%end%>
 						</ul>
 						<div class="panel-footer">
-							<a class="btn btn-lg btn-block btn-<%= t.color %>" href="#">Заказать</a>
+							<a class="btn btn-lg btn-block btn-<%= t.color %>" href="/order">Заказать</a>
 						</div>
 					</div>
 			<!-- /PRICE ITEM -->
 		</div>
+
+
+
         <% end %>
 	</div>
 
 
 </div>
+
 

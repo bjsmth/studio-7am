@@ -9,6 +9,7 @@
 //= require velocity.min.js
 
 //= require boot.js
+//= require main.js
 
 
 
