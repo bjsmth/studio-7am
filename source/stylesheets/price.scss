@@ -26,6 +26,26 @@ $vici-color: #292F33;
   }
 }
 
+
+@media screen and (max-width: 980px) { 
+
+  .container.content {
+    width: 100%;
+    padding: 10px;
+  }
+
+.price {
+  font-size: 0.6em;
+
+   .list-group-item { 
+      font-size: 1.2em;
+    }
+  }
+
+}
+
+
+
 .price .list-group-item {
   border-bottom-: 1px solid rgba(250, 250, 250, 0.5);
 }

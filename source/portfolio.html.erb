@@ -16,13 +16,46 @@ title: Портфолио - Веб студия "7 утра" - Создание 
 
 
 <div class="content container">
-<% data.works.each do |w| %>
+  <div class="row">
+    <% data.works.each do |w| %>
+       <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
+       	  <a href="#" data-toggle="modal" data-target="#<%= w.id %>" class="portfolio_item">
+		    <img src="http://placehold.it/300x300" class="img-responsive">
+		    <h3><%= w.name %></h3>
+	      </a>
+	      </div>
 
-		<h3><%= w.name %></h3>
+		<!-- Modal -->
+		<div class="modal fade" id="<%= w.id %>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title" id="myModalLabel"><%= w.name %></h4>
+		      </div>
+		      <div class="modal-body">
+        		 
+        		 <div class="row">
+        		  <div class="col-md-6">
+        		     <img src="http://placehold.it/300x300" class="img-responsive">
+        		   </div>
+        		   <div class="col-md-6">
+   		             <a href="<%= w.url %>" target="_blank">Перейти на сайт</a>
+                    </div>
+                 </div>
 
-<% end %>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
 
+
+
+    <% end %>
+  </div>
 </div>
-
 
 

@@ -1,11 +1,27 @@
 [
    {
       "id":"1",
-      "name":"Арково",
-      "items":[
-         {
-            "name":"Бесплатный сайт"
-         }
-      ]
+      "name":"Компания Век",
+      "url": "http://vek25.ru"
+   },
+   {
+   	  "id": "2",
+   	  "name": "Apple125",
+   	  "url": "http://apple125.ru"
+   },
+   {
+   	  "id": "3",
+   	  "name": "Vlancer",
+   	  "url": "http://vlancer.ru"
+   },
+   {
+   	  "id": "4",
+   	  "name": "Crowd",
+   	  "url": "#"
+   },
+   {
+   	  "id": "5",
+   	  "name": "Sakura Market",
+   	  "url": "http://sakura-market.ru"
    }
 ]
