@@ -18,6 +18,14 @@ body {
 }
 
 
+  .special {
+    font-family: 'Ubuntu Mono', ;
+    font-size: 18px;
+    position: relative;
+    top: 33px;
+    left: -10px;
+  }
+
 a {
     &:active, &:focus, &:hover {
       text-decoration: none;
@@ -33,6 +41,7 @@ a {
 .item {
   float: left;
 }
+
 h1, h2, h3 {
  	font-family: 'Ubuntu Mono', ;
  	a {
@@ -59,7 +68,11 @@ i {
  	margin: 0;
  	background-color: #14AA9F;
   border-radius: 0;
+
  	.navbar-brand {
+    position: relative;
+    top: 35px;
+    font-size: 20px;
  		color: #fafafa;
  		&:hover, &:active, &:focus {
  			background-color: inherit;
@@ -67,9 +80,11 @@ i {
  		}
  	}
  	.nav {
+    position: relative;
+    top: 33px;
  		li {
  			a {
- 				color: #fafafa;
+ 				color: #34495E;
  				font-family: 'Ubuntu Mono', ;
  				font-size: 18px;
  				&:hover, &:active, &:focus {
@@ -93,6 +108,7 @@ i {
   padding-top: 5px;
  	h1 {
  		font-weight: bold;
+    color: #34495E;
  	}
  }
 
